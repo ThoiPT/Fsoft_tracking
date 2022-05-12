@@ -36,8 +36,4 @@ class SkillController extends Controller
         return view("Skill/Skill_List",compact('list'));
     }
 
-    public function testGit()
-    {
-
-    }
 }

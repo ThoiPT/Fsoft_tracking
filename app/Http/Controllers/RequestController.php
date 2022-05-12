@@ -85,7 +85,6 @@ class RequestController extends Controller
                                     JOIN request_skill ON request_skill.request_id = requests.id
                                     JOIN skills ON skills.idSkill = request_skill.skill_id
                                     JOIN users ON users.id = request_skill.user_id');
-        $getIDSkill = DB::table('skills')->get()->all();
-        return view("Request/Request_List",compact('request', 'getIDSkill'));
+        return view("Request/Request_List",compact('request'));
     }
 }
