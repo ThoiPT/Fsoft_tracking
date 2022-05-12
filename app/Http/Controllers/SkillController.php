@@ -35,4 +35,9 @@ class SkillController extends Controller
         $deleteSkill = DB::table('skills')->where('idSkill', '=', $idSkill)->delete();
         return view("Skill/Skill_List",compact('list'));
     }
+
+    public function testGit()
+    {
+
+    }
 }
